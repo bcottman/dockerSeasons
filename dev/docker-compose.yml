@@ -2,10 +2,10 @@ version: '3'
 services:
   notebook:
     build:
-      context: ./dev-base
+      context: ./docker
     ports:
         - "8888:8888"
     volumes:
-      - ../../.:/dev-base
+      - ../.:/docker
 
-    working_dir: /dev-base
+    working_dir: /docker
