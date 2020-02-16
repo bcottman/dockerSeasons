@@ -1,0 +1,11 @@
+version: '3'
+services:
+  notebook:
+    build:
+      context: ./dev-base
+    ports:
+        - "8888:8888"
+    volumes:
+      - ../../.:/dev-base
+
+    working_dir: /dev-base
