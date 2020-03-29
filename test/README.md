@@ -52,10 +52,9 @@ if you want add to .bashrc_profile or bashrc.txt
 devdir='<your-local-path>/PROJECTS/dockerSeasons/Dev'
 testdir='<your-local-path>/Documents/PROJECTS/dockerSeasons/Test'
 
-
 #
-alias updev="cd $devdir; docker-compose up &" 
-alias downdev="cd $devdir; docker-compose down"
+alias updev="cd $devdir; docker-compose up &"
+alias downdev="cd $devdir; docker-compose down" 
 alias builddev="cd $devdir; docker-compose build"
 
 #

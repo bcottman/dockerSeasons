@@ -8,5 +8,5 @@ RUN python -m pip  install jupyter_contrib_nbextensions
 RUN jupyter contrib nbextension install --user
 COPY requirements.txt ./requirements.txt
 RUN python -m pip  install -r requirements.txt
-
+#
 
