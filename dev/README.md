@@ -18,8 +18,9 @@ ref: https://pip.pypa.io/en/stable/user_guide/#requirements-files
    $ docker-compose up & (add to <home>/<uid>/.prolile)
  note:
    $ docker-compose up -d
-   will NOT output 
+
  http://127.0.0.1:8888/?token=a5bcd81e7c5b126cb1b67ddf7fa6ce4a49eff7cef9f48ad (example)
+   
 6.shuts down docker-compose image in background
    $ docker-compose down
 
