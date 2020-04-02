@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#
+
+# example of <projects-directory-path>
+$ $HOME/PROJECTS/
+devdir=<projects-directory-path><A-PROJECT>/dockerSeasons/dev/'
+testdir=<projects-directory-path><A-PROJECT>/dockerSeasons/test/'
+
+echo $devdir
+echo $testdir
+
+export testdir
+export devdir
+
+#
+alias updev="(cd $devdir; docker-compose up) &"
+alias downdev="(cd $devdir; docker-compose down) &"
+alias builddev="(cd $devdir; docker-compose build) &"
+
+#
+alias uptest="(cd $testdir; docker-compose up) & "
+alias downtest="(cd $testdir; docker-compose down) &"
+alias buildtest="cd $testdir; docker-compose build) &"
